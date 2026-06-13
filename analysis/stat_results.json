@@ -1,0 +1,64 @@
+{
+  "n_rows_original": 1000,
+  "n_rows_after_drop": 1000,
+  "ttest": {
+    "statistic": 0.6826103913380815,
+    "pvalue": 0.4950114785145835,
+    "mean_male": 141807.3397847358,
+    "mean_female": 136883.20862985688,
+    "cohens_d": 0.043144702704668865
+  },
+  "anova": {
+    "table": {
+      "sum_sq": {
+        "C(Category)": 37386408057.62328,
+        "Residual": 12968416533019.238
+      },
+      "df": {
+        "C(Category)": 4.0,
+        "Residual": 995.0
+      },
+      "F": {
+        "C(Category)": 0.717116772171463,
+        "Residual": NaN
+      },
+      "PR(>F)": {
+        "C(Category)": 0.5802864995731377,
+        "Residual": NaN
+      }
+    },
+    "eta2": 0.0028745943812160933
+  },
+  "chi2": {
+    "chi2": 3.3328873600843005,
+    "pvalue": 0.5037384719190886,
+    "dof": 4,
+    "cramer_v": 0.057731164548138994,
+    "contingency_table": {
+      "Category": {
+        "0": "Education",
+        "1": "Electronics",
+        "2": "Fashion",
+        "3": "Furniture",
+        "4": "Grocery"
+      },
+      "0": {
+        "0": 79,
+        "1": 133,
+        "2": 69,
+        "3": 63,
+        "4": 63
+      },
+      "1": {
+        "0": 99,
+        "1": 221,
+        "2": 87,
+        "3": 96,
+        "4": 90
+      }
+    }
+  },
+  "regression": {
+    "summary": "                            OLS Regression Results                            \n==============================================================================\nDep. Variable:              log_Total   R-squared:                       0.829\nModel:                            OLS   Adj. R-squared:                  0.828\nMethod:                 Least Squares   F-statistic:                     1575.\nDate:                Sat, 13 Jun 2026   Prob (F-statistic):               0.00\nTime:                        18:12:06   Log-Likelihood:                -674.51\nNo. Observations:                 980   AIC:                             1357.\nDf Residuals:                     976   BIC:                             1377.\nDf Model:                           3                                         \nCovariance Type:            nonrobust                                         \n==============================================================================\n                 coef    std err          t      P>|t|      [0.025      0.975]\n------------------------------------------------------------------------------\nconst          8.7040      0.064    136.254      0.000       8.579       8.829\nQuantity       0.2330      0.005     42.822      0.000       0.222       0.244\nUnit_Price   5.76e-05   1.09e-06     52.858      0.000    5.55e-05    5.97e-05\nAge           -0.0015      0.001     -1.355      0.176      -0.004       0.001\n==============================================================================\nOmnibus:                      488.096   Durbin-Watson:                   2.026\nProb(Omnibus):                  0.000   Jarque-Bera (JB):             3468.293\nSkew:                          -2.184   Prob(JB):                         0.00\nKurtosis:                      11.115   Cond. No.                     1.21e+05\n==============================================================================\n\nNotes:\n[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.\n[2] The condition number is large, 1.21e+05. This might indicate that there are\nstrong multicollinearity or other numerical problems."
+  }
+}

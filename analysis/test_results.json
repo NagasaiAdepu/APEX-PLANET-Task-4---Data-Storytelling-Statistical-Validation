@@ -1,0 +1,54 @@
+{
+  "data_path": "D:\\APEX\\APEX_task_4\\ApexPlanet_DataAnalytics_Dataset.xlsx",
+  "columns": [
+    "Order_ID",
+    "Order_Date",
+    "Customer_ID",
+    "Customer_Name",
+    "Age",
+    "Gender",
+    "City",
+    "Product",
+    "Category",
+    "Quantity",
+    "Unit_Price",
+    "Total_Sales"
+  ],
+  "t_test": {
+    "groups": [
+      "Female",
+      "Male"
+    ],
+    "n": {
+      "Female": 489,
+      "Male": 511
+    },
+    "t_stat": -0.6826103913380815,
+    "p_value": 0.4950114785145835,
+    "levene": {
+      "stat": 0.9574055890936665,
+      "p": 0.32807852717685027
+    },
+    "cohens_d": -0.04314470270466887,
+    "means": {
+      "Female": 136883.20862985688,
+      "Male": 141807.3397847358
+    },
+    "std": {
+      "Female": 111788.03127492439,
+      "Male": 116327.97538483361
+    },
+    "boxplot": "presentation\\figures\\total_sales_by_gender.png"
+  },
+  "chi2": {
+    "chi2": 33.80991458675505,
+    "p_value": 0.20720182015920804,
+    "dof": 28,
+    "cramers_v": 0.09254084586102247,
+    "observed_shape": [
+      5,
+      8
+    ],
+    "heatmap": "presentation\\figures\\category_city_heatmap.png"
+  }
+}

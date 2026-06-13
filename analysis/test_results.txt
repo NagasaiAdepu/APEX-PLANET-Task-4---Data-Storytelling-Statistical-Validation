@@ -1,0 +1,8 @@
+Data file provided: D:\APEX\APEX_task_4\ApexPlanet_DataAnalytics_Dataset.xlsx
+Loaded data with shape: (1000, 12)
+Columns: ['Order_ID', 'Order_Date', 'Customer_ID', 'Customer_Name', 'Age', 'Gender', 'City', 'Product', 'Category', 'Quantity', 'Unit_Price', 'Total_Sales']
+
+Independent t-test on Total_Sales by Gender (Female vs Male):
+ t-statistic = -0.6826, p-value = 0.495011
+
+Chi-square test (Category vs City): chi2=33.8099, p=0.207202, dof=28
